@@ -6,6 +6,7 @@ npx create-react-app redux-tool-tip
 
 # install package
 npm install @reduxjs/toolkit
+npm install react-redux
 
 
 ## Available Scripts
