@@ -1,6 +1,6 @@
 import React, {memo} from 'react'
 
-function DemoC() {
+function DemoC({handleDemoB}) {
   console.log("DemoC")
 
   return (

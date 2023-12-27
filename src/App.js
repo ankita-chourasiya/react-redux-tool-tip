@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux'
 import { counterStateIncrement, counterStateDecrement, counterStateReset } from './Redux/slice/userSlice';
@@ -25,6 +25,22 @@ function App() {
     dispatch(counterStateReset());
   }
 
+  const handleDemoA = useCallback(() => {
+    //write a code here
+  }, [])
+
+  const handleDemoB = useCallback(() => {
+    //write a code here
+  }, [])
+
+  const handleDemoC = useCallback(() => {
+    //write a code here
+  }, [])
+
+  // const handleDemoA = () => {
+
+  // }
+
   return (
     <div className="App">
       <h1>Redux By Toolkit</h1>
@@ -35,9 +51,9 @@ function App() {
 
       <div>
         <button onClick={() => setDemoProp("Real Demo")}>Click Me</button>
-        <DemoA />
-        <DemoB />
-        <DemoC />
+        <DemoA handleDemoA={handleDemoA} />
+        <DemoB handleDemoB={handleDemoB} />
+        <DemoC handleDemoC={handleDemoC} />
       </div>
       
     </div>

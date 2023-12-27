@@ -1,10 +1,11 @@
 import React, {memo} from 'react'
 
-function DemoA() {
+function DemoA({handleDemoA}) {
+  // console.log(handleDemoA.count)
   console.log("DemoA")
   return (
     <div>
-      
+      <h1>DemoA</h1>
     </div>
   )
 }
