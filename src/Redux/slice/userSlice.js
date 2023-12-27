@@ -11,11 +11,18 @@ const userSlice = createSlice({
     handleTest: (state, action) => {
       state.testState = action.payload;
     },
-    counterState: (state, action) => {
+    counterStateIncrement: (state, action) => {
       state.count = state.count + 1;
+    },
+    counterStateDecrement: (state, action) => {
+      state.count = state.count - 1;
+    },
+    counterStateReset: (state, action) => {
+      state.count = 0;
     }
+		
   }
 })
 
-export const { handleTest, counterState } = userSlice.actions;
+export const { handleTest, counterStateIncrement, counterStateDecrement, counterStateReset } = userSlice.actions;
 export default userSlice.reducer;
