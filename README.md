@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# create project
+npx create-react-app redux-tool-tip
+
+# install package
+npm install @reduxjs/toolkit
+
 
 ## Available Scripts
 
